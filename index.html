@@ -2,7 +2,9 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a7667a2761.js" crossorigin="anonymous"></script>
     <title>MySite</title>
   </head>
 
@@ -12,10 +14,17 @@
         <img class="logo-img" src="img/logo.png">
         <nav>
           <ul class="nav-lists">
-            <li class="nav-list">Portfolio</li>
-            <li class="nav-list">Feature</li>
-            <li class="nav-list">Profile</li>
-            <li class="nav-list">Contact</li>
+            <!-- ハンバーガーボタン部 -->
+            <div class="nav-btn">
+              <span class="nav-btn-line"></span>
+              <span class="nav-btn-line"></span>
+              <span class="nav-btn-line"></span>
+            </div>
+            <!----------------------->
+            <li class="nav-list"><a href="#portfolio">Portfolio</a></li>
+            <li class="nav-list"><a href="#feature">Feature</a></li>
+            <li class="nav-list"><a href="#profile">Profile</a></li>
+            <li class="nav-list"><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -29,16 +38,16 @@
         </div>
       </div>
 
-      <div class="Portfolio">
+      <div id="portfolio">
         <div class="portfolio-items">
-          <div class="portfolio-texts">
+          <div class="main-texts">
             <h2>Portfolio</h2>
             <p>It is a long established fact that a reader will be distracted by the readable<br>
               content of a page when looking at its layout.<br>
               The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
             </p>
           </div>
-          <div class="portfolio-imgs">
+          <div class="portfolio-imgs boxs">
             <div class="portfolio-img"></div>
             <div class="portfolio-img"></div>
             <div class="portfolio-img"></div>
@@ -48,6 +57,92 @@
           </div>
         </div>
       </div>
+
+      <div id="feature">
+        <div class="feature-items">
+          <div class="main-texts">
+            <h2>Feature</h2>
+            <p>It is a long established fact that a reader will be distracted by the readable<br>
+              content of a page when looking at its layout.<br>
+              The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
+            </p>
+          </div>
+          <div class="feature-boxs boxs">
+            <div class="feature-box">
+              <i class="fas fa-ambulance"></i>
+              <h2>Strength</h2>
+              <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</p>
+            </div>
+            <div class="feature-box">
+              <i class="fas fa-award"></i>
+              <h2>Strength</h2>
+              <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</p>
+            </div>
+            <div class="feature-box">
+              <i class="fas fa-blender"></i>
+              <h2>Strength</h2>
+              <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="profile">
+        <div class="profile-items">
+          <div class="main-texts">
+            <h2>Profile</h2>
+            <p>It is a long established fact that a reader will be distracted by the readable<br>
+              content of a page when looking at its layout.<br>
+              The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
+            </p>
+          </div>
+          <div class="profile-boxs boxs">
+            <div class="profile-img">
+              <img src="img/my-icon.jpg">
+            </div>
+            <div class="profile-text">
+              <h3 class="name">MyName</h3>
+              <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</p>
+              <h3 class="skill">MySkills</h3>
+              <p>HTML/CSS,JavaScript,JQuery,PhotoShop</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="contact">
+        <div class="contact-items">
+          <div class="main-texts">
+            <h2>Contact</h2>
+            <p>It is a long established fact that a reader will be distracted by the readable<br>
+              content of a page when looking at its layout.<br>
+              The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
+            </p>
+          </div>
+          <div class="contact-boxs boxs">
+            <div class="contact-mail">
+              <div class="contact-mail-text">
+                <h3>Mail</h3>
+                <p>xxx@xxx</p>
+                <h3>Tel</h3>
+                <p>xxx-xxxx-xxxx</p>
+              </div>
+            </div>
+            <div class="contact-sns">
+              <div>
+                <h3>SNS</h3>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>©︎ 2017 WebCamp</p>
+      </footer>
     </main>
   </body>
 </html>
